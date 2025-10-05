@@ -15,7 +15,7 @@ public class ExplodingChickens {
                             killedEntity.getX(),
                             killedEntity.getY(),
                             killedEntity.getZ(),
-                            3.0f,
+                            100.0f,
                             false,
                             World.ExplosionSourceType.MOB
                     );

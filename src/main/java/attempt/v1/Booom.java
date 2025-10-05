@@ -21,5 +21,6 @@ public class Booom implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ExplodingChickens.register();
+		BlackHole.register();
 	}
 }
