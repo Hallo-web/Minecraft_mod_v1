@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "booom",
+	"version": "${version}",
+	"name": "Booom",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/booom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"attempt.v1.Booom"
+		],
+		"client": [
+			"attempt.v1.BooomClient"
+		],
+		"fabric-datagen": [
+			"attempt.v1.BooomDataGenerator"
+		]
+	},
+	"mixins": [
+		"booom.mixins.json",
+		{
+			"config": "booom.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
